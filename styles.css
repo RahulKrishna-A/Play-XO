@@ -1,0 +1,131 @@
+html,body,*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+#main--container{
+    /*display: flex;*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 48);
+    background-image: url("./Assets/bg.png");
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 5rem;
+    width: 4rem;
+    /*background-color: aqua;*/
+    padding: 0;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    /*border: 1px dashed white;*/
+
+}
+
+.logo p{
+    font-size: 1.35rem;
+    font-weight: 2000;
+    text-shadow: 1px 1px 5px red;
+}
+/*--------------github*/
+.github{
+    position: absolute;
+    right: 20px;
+    top:20px;
+}
+#myGit{
+    fill: white;
+    height: 3rem;
+    width: 3rem;
+    transition: all 0.8s ease-in-out;
+}
+#myGit:hover{
+    transform: rotate(720deg);
+    fill: gold;
+}
+
+
+.main__glass{
+
+
+    background: hsla(166, 55%, 66%, 1);
+
+    background: linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 80vh;
+    width: 80vw;
+    transition: all 3s;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    /*z-index: 3;*/
+
+}
+.main__glass::before{
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 300px;
+    background: rgb(209,40,217);
+    background: linear-gradient(90deg, rgb(253, 0, 203) 0%, #1a035d 100%);
+    animation: rotate 4s linear infinite;
+    align-self: center;
+    left:-10%;
+
+
+
+}
+.main__glass::after{
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    background: hsla(166, 55%, 66%, 1);
+
+    background: linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+
+    inset: 6.2px;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.main__glass:hover::before,.main__glass:focus:after{
+    animation-play-state: paused;
+}
+
+
+/*-------------------play area*-----------------------------/
+
+
+
+ */
+
+/*-----------------------------------players------------------------------ */
