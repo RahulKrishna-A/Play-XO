@@ -52,7 +52,7 @@ const Gameboard = (() => {
     const checkWin = () =>{
         count+=1;
         const winningCombinations = [
-            [0,1,2],[3,4,5],[6,7,8],[0,3,6],[2,5,8],[0,4,8],[2,4,6]
+            [0,1,2],[3,4,5],[6,7,8],[0,3,6],[2,5,8],[0,4,8],[2,4,6],[1,4,7]
         ]
         for(let i=0;i<winningCombinations.length;i++){
             const [a,b,c] = winningCombinations[i];
@@ -114,7 +114,7 @@ const Pregame = (e) => {
     pName1.innerText = input1.value;
     pName2.innerText = input2.value;
     users[0]= input1.value;
-    users[1]= input1.value;
+    users[1]= input2.value;
 
     let user1 = document.querySelector(".user.one");
     let user2 = document.querySelector(".user.two");
