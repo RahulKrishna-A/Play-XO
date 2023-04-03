@@ -1,12 +1,15 @@
-html,body,*{
+html, body, * {
     margin: 0;
     padding: 0;
+    font-family: 'Edu NSW ACT Foundation', cursive;
 }
-*{
+
+
+* {
     box-sizing: border-box;
 }
 
-#main--container{
+#main--container {
     /*display: flex;*/
     width: 100vw;
     height: 100vh;
@@ -18,7 +21,7 @@ html,body,*{
     position: relative;
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -32,100 +35,385 @@ html,body,*{
 
 }
 
-.logo p{
+.logo p {
     font-size: 1.35rem;
     font-weight: 2000;
     text-shadow: 1px 1px 5px red;
 }
+
 /*--------------github*/
-.github{
+.github {
     position: absolute;
     right: 20px;
-    top:20px;
+    top: 20px;
 }
-#myGit{
+
+#myGit {
     fill: white;
     height: 3rem;
     width: 3rem;
     transition: all 0.8s ease-in-out;
 }
-#myGit:hover{
+
+#myGit:hover {
     transform: rotate(720deg);
     fill: gold;
 }
 
 
-.main__glass{
+.main__glass {
 
+    background: hsla(350, 73%, 47%, 1);
 
-    background: hsla(166, 55%, 66%, 1);
+    background: linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
 
-    background: linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
 
-    background: -moz-linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
 
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     height: 80vh;
     width: 80vw;
-    transition: all 3s;
+    transition: all 0.8s;
     position: relative;
     display: flex;
     overflow: hidden;
-    /*z-index: 3;*/
-
+    align-items: center;
 }
-.main__glass::before{
+
+.main__glass::before {
     content: "";
     position: absolute;
     width: 130%;
     height: 300px;
-    background: rgb(209,40,217);
-    background: linear-gradient(90deg, rgb(253, 0, 203) 0%, #1a035d 100%);
-    animation: rotate 4s linear infinite;
+    background: rgb(209, 40, 217);
+    background: linear-gradient(90deg, #eea008 0%, #edf5f5 100%);
+    animation: rotate 3s linear infinite;
     align-self: center;
-    left:-10%;
-
-
+    left: -10%;
 
 }
-.main__glass::after{
+
+.main__glass::after {
     content: "";
     position: absolute;
     border-radius: 30px;
-    background: hsla(166, 55%, 66%, 1);
+    background: hsla(350, 73%, 47%, 1);
 
-    background: linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+    background: linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
 
-    background: -moz-linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
 
-    background: -webkit-linear-gradient(90deg, hsla(166, 55%, 66%, 1) 0%, hsla(178, 59%, 48%, 1) 100%, hsla(178, 38%, 47%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(350, 73%, 47%, 1) 0%, hsla(230, 33%, 47%, 1) 100%);
 
     inset: 6.2px;
 }
 
 @keyframes rotate {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(360deg);
     }
 }
 
-.main__glass:hover::before,.main__glass:focus:after{
+.main__glass:hover::before, .main__glass:focus:after {
     animation-play-state: paused;
 }
 
 
-/*-------------------play area*-----------------------------/
+/*-------------------play area*-----------------------------/ */
+.user {
+    background: linear-gradient(135deg, rgba(253, 253, 253, 0.2), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.37);
+    z-index: 3;
+    height: 20vh;
+    width: 10vw;
+    font-family: "fantasy", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem
+}
+
+.user p {
+    margin-bottom: 0.5rem;
+}
+
+.user.one {
+    margin-left: 2.5rem;
+}
+
+.user.two {
+    margin-right: 2.5rem;
+}
+.user__choice {
+    color: #edf5f5;
+    font-size: 3.5rem;
+    font-family: 'Caveat', cursive;}
+
+
+/*---------forms-----------------*/
+#main__forms {
+    background: linear-gradient(135deg, rgba(253, 253, 253, 0.2), rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 3px 20px 0 black;
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 40%;
+    border-radius: 5rem 1rem 5rem 1rem/5rem 2rem 5rem 2rem;
+    padding: 1rem;
+    left: 35%;
+}
+
+#main__forms > form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#form_player__one, #form_player__two {
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    height: 1.5rem;
+}
+
+#form_player__one:invalid, #form_player__two:invalid {
+    border: 2px solid red;
+
+
+}
+
+#form_player__one:valid, #form_player__two:valid {
+    border: 2px solid greenyellow;
+
+
+}
+
+input[type=submit] {
+    width: 4rem;
+    align-self: center;
+    color: white;
+    background-color: #1a035d;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    color: #1a035d;
+    background-color: white;
+}
+
+/*-------------------------------tic__space---------------------------*/
+#main_tic__space {
+    /*background-color: greenyellow;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 50%;
+    z-index: 3;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    color: #06071f;
+    /*gap:2px;*/
+
+}
+
+.squares {
+    /*background-color: #eea008;*/
+    border: rgba(211, 224, 217, 0.6) solid 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    cursor:pointer ;
+}
+.squares:nth-child(6n+1),.squares:nth-child(4){
+   border-left:0 ;
+}
+.squares:nth-child(1),.squares:nth-child(2),.squares:nth-child(3)
+{
+    border-top: 0;
+}
+
+.squares:nth-child(3),.squares:nth-child(6),.squares:nth-child(9)
+{
+    border-right: 0;
+}
+.squares:nth-child(7),.squares:nth-child(8),.squares:nth-child(9)
+{
+    border-bottom: 0;
+}
+
+/*-----------  main__winner ---------------*/
+#main__winner{
+    width: 30%;
+    height: 30%;
+    z-index: 5;
+    background-color: #000030;
+    position: absolute;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+            45deg,
+            hsl(240deg 100% 20%) 0%,
+            hsl(311deg 100% 25%) 47%,
+            hsl(334deg 100% 40%) 66%,
+            hsl(6deg 98% 61%) 78%,
+            hsl(37deg 100% 50%) 87%,
+            hsl(55deg 100% 50%) 100%
+    );
+    border-radius:2rem;
+    box-shadow: 2px 2px 10px 1px rgba(42, 39, 39, 0.82);
+
+}
+#main__winner p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #edf5f5;
+}
+#restart{
+    width: 5rem;
+    height: 2.2rem;
+    font-size: 1.25rem;
+    background-color: rgba(208, 212, 190, 0.6);
+    border: none;
+    border-radius: 0.5rem;
+}
+#restart:hover{
+    background-color: rgba(208, 212, 190, 0.9);
+}
+
+.hide {
+    display: none !important;
+
+}
+
+/*---------------------------- media queries -------------------------*/
+@media  screen and (max-width: 500px) {
+    .logo {
+
+        height: 5rem;
+        width: 3rem;
+        color: white;
+
+    }
+
+    .logo p {
+        font-size: 1rem;
+
+    }
+
+    /*--------------github*/
+
+
+    #myGit {
+        fill: white;
+        height: 2.5rem;
+        width: 2.5rem;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .main__glass {
+        margin-top: 3rem;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__glass::before {
+        width: 100%;
+        height: 1000px;
+    }
+    /*---------forms-----------------*/
+    #main__forms {
+
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: 40%;
+        border-radius: 3rem 1rem 3rem 1rem/3rem 2rem 3rem 2rem;
+        padding: 1rem;
+        left: 15%;
+        top:30%;
+    }
+
+    /*!-------------------play area*-----------------------------*/
+    .user {
+        position: absolute;
+        z-index: 3;
+        height: 20vh;
+        width: 6rem;
+        bottom:2rem;
+    }
+
+    .user p {
+        margin-bottom: 0.5rem;
+    }
+
+    .user.one {
+        left: 1rem;
+    }
+
+    .user.two {
+       right: 1rem;
+    }
+    .user__choice {
+        font-size: 3rem;
+        }
+    /*-------------------------------tic__space---------------------------*/
+    #main_tic__space {
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        width: 80%;
+        height: 50%;
+        z-index: 3;
+        display: grid;
+        grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+        color: #06071f;
+        /*gap:2px;*/
+
+    }
+    /*-----------  main__winner ---------------*/
+    #main__winner{
+        width: 80%;
+        height: 40%;
+        z-index: 5;
+        left: 10%;
+        border-radius:2rem;
+        box-shadow: 2px 2px 10px 1px rgba(42, 39, 39, 0.82);
+        top:20%
+
+    }
+    #main__winner p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0.5rem;
+        color: #edf5f5;
+    }
 
 
 
- */
-
-/*-----------------------------------players------------------------------ */
+}
