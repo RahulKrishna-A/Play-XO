@@ -8,7 +8,7 @@ This is a simple Tic Tac Toe game that you can play with another person. It is b
 
 You can play the game online at https://rahulkrishna-a.github.io/Play-XO/
 
-Working Screenshots
+## Working Screenshots
 
 ![Working Screenshots 1](https://user-images.githubusercontent.com/109454528/229764473-46feec31-4de8-4a44-8b80-0b4713bb9aeb.png)
 
