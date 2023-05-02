@@ -14,5 +14,5 @@ You can play the game online at https://rahulkrishna-a.github.io/Play-XO/
 
 ![Working screenshots 2](https://user-images.githubusercontent.com/109454528/229764495-baf80e7f-af08-4745-96f0-f2da41012836.png)
 
-![Working screenshots 3](https://user-images.githubusercontent.com/109454528/229764490-282d9016-d5f4-4bd6-9011-cf7834e4bf96.png)
+![Working screenshots 3](https://user-images.githubusercontent.com/109454528/229764490-282d9016-d5f4-4bd6-9011-cf7834e4bf96.png) 
 
